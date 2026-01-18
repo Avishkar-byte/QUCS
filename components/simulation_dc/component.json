@@ -1,0 +1,32 @@
+{
+    "id": "simulation_dc",
+    "name": "DC Simulation",
+    "category": "Simulations",
+    "ports": [],
+    "pins": [],
+    "parameters": {
+        "Var": {
+            "type": "string",
+            "default": "V1",
+            "description": "Variable to sweep (e.g. V1)"
+        },
+        "Start": {
+            "type": "float",
+            "default": 0,
+            "unit": "V"
+        },
+        "Stop": {
+            "type": "float",
+            "default": 10,
+            "unit": "V"
+        },
+        "Points": {
+            "type": "int",
+            "default": 11
+        }
+    },
+    "simulation": {
+        "engine": "qucs",
+        "netlist": "model.net"
+    }
+}

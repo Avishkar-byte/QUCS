@@ -1,0 +1,23 @@
+{
+    "id": "ground",
+    "name": "Ground",
+    "category": "Sources",
+    "ports": [
+        "G"
+    ],
+    "pins": [
+        {
+            "name": "G",
+            "x": 20,
+            "y": 0
+        }
+    ],
+    "parameters": {},
+    "flags": {
+        "is_ground": true
+    },
+    "simulation": {
+        "engine": "qucs",
+        "netlist": "model.net"
+    }
+}

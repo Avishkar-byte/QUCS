@@ -1,0 +1,33 @@
+{
+    "id": "voltage_dc",
+    "name": "DC Voltage Source",
+    "category": "Sources",
+    "ports": [
+        "Plus",
+        "Minus"
+    ],
+    "pins": [
+        {
+            "name": "Plus",
+            "x": 0,
+            "y": 20
+        },
+        {
+            "name": "Minus",
+            "x": 60,
+            "y": 20
+        }
+    ],
+    "parameters": {
+        "U": {
+            "type": "float",
+            "default": 1,
+            "unit": "V",
+            "name": "Voltage (V)"
+        }
+    },
+    "simulation": {
+        "engine": "qucs",
+        "netlist": "model.net"
+    }
+}

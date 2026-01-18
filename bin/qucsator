@@ -1,0 +1,4 @@
+#!/bin/bash
+# Wrapper to call tiny_qucsator.py
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+python3 "$DIR/tiny_qucsator.py" "$@"

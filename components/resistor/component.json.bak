@@ -1,0 +1,33 @@
+{
+  "id": "resistor",
+  "name": "Resistor",
+  "category": "Passive",
+  "ports": [
+    "A",
+    "B"
+  ],
+  "pins": [
+    {
+      "name": "A",
+      "x": 0,
+      "y": 20
+    },
+    {
+      "name": "B",
+      "x": 60,
+      "y": 20
+    }
+  ],
+  "parameters": {
+    "R": {
+      "type": "float",
+      "default": 1000,
+      "unit": "Ohm",
+      "name": "Resistance (Ohms)"
+    }
+  },
+  "simulation": {
+    "engine": "qucs",
+    "netlist": "model.net"
+  }
+}
